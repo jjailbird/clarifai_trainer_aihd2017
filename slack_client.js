@@ -32,7 +32,7 @@ controller.on('message_received', function(bot, message) {
           return;
         }
         request.get({url:response.file.url_private_download,encoding:null,
-                    headers:{"Authorization":"Bearer "+"xoxb-159751324802-jwsjap9HAxZ7DbtI164H5asP"}}, function (err, res, body) {
+                    headers:{"Authorization":"Bearer "+process.env.clarifai_app_token}}, function (err, res, body) {
           console.log("*** calling clarify ...... ****")
           console.log("error:", err)
           console.log('statusCode:',  response.statusCode);
