@@ -32,11 +32,12 @@ controller.on('message_received', function(bot, message) {
           return;
         }
         request.get({url:response.file.url_private_download,encoding:null,
-                    headers:{"Authorization":"Bearer "+process.env.clarifai_app_token}}, function (err, res, body) {
-          console.log("*** calling clarify ...... ****")
+                    headers:{"Authorization":"Bearer "+process.env.slack_token}}, function (err, res, body) {
+
           console.log("error:", err)
           console.log('statusCode:',  response.statusCode);
-          console.log(body)
+          console.log("*** calling clarify ...... ****")
+          //console.log(body)
           ClarifaiApp.models.predict("smilies", body.toString('base64')).then(function(response){
             console.log("*** clarifai response ***")
             obj = JSON.stringify(response);
