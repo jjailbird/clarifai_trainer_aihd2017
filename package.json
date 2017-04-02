@@ -1,0 +1,24 @@
+{
+  "name": "clarifai_trainer_aihd2017",
+  "version": "1.0.0",
+  "description": "slack client",
+  "main": "slack_client.js",
+  "dependencies": {
+    "botkit": "^0.5.2",
+    "clarifai": "^2.1.4-dev"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncoronges/clarifai_trainer_aihd2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncoronges/clarifai_trainer_aihd2017/issues"
+  },
+  "homepage": "https://github.com/ncoronges/clarifai_trainer_aihd2017#readme"
+}
