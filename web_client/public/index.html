@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <!-- stylesheet -->
+    <link href="/css/drawingboard.min.css" rel="stylesheet">
+    <style>
+    /*
+    * drawingboards styles: set the board dimensions you want with CSS
+    */
+
+    .board {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+
+    #default-board {
+      width: 700px;
+      height: 400px;
+    }
+
+    #custom-board-2 {
+      width: 550px;
+      height: 300px;
+    }
+
+    #title-board {
+      width: 600px;
+      height: 270px;
+    }
+    /* custom board styles for the title? no problem*/
+    #title-board .drawing-board-canvas-wrapper {
+      border: none;
+      margin: 0;
+    }
+    #predict-button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div id="container">
+      <div class="example" data-example="1">
+      		<h1>The default DrawingBoard</h1>
+      		<div class="board" id="default-board"></div>
+          <button id="predict-button">predict</button>
+      </div>
+
+    </div>
+
+    <!-- jquery is required - zepto might do the trick too -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/js/drawingboard.min.js"></script>
+    <script data-example="1">
+			//create the drawingboard by passing it the #id of the wanted container
+			var defaultBoard = new DrawingBoard.Board('default-board');
+      //defaultBoard.addControl('Download'); //if the DrawingBoard.Control.Download class exists
+      $("#predict-button").click(function ()
+      {
+          alert("hello")
+      });
+		</script>
+  </body>
+</html>
