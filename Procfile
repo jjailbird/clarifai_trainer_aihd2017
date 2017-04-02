@@ -1,1 +1,1 @@
-web: node slack_client/slack_client.js
+web: node slack_client.js
