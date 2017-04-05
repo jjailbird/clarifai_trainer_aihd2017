@@ -14,11 +14,9 @@ We scanned about 25 images to be used in positive training.
 
 <img src="https://github.com/ncoronges/clarifai_trainer_aihd2017/raw/master/smileys_1/smileys_0000.jpg" width="50%" height="50%">
 
-![Smiley](./smileys_1/smileys_0000.jpg)
-
 About 10 images for negatives.
 
-![Not Smiley](./not_smileys_1/0001.jpg)
+<img src="https://github.com/ncoronges/clarifai_trainer_aihd2017/raw/master/smileys_1/smileys_0001.jpg" width="50%" height="50%">
 
 We saved a small set of imagse each from the Positives and Negatives to test after training.
 
