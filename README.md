@@ -12,6 +12,8 @@ Clarifai uses a base image model which is what gives the service its magic. You 
 
 We scanned about 25 images to be used in positive training.
 
+<img src="https://github.com/ncoronges/clarifai_trainer_aihd2017/raw/master/smileys_1/smileys_0000.jpg" width="50%" height="50%">
+
 ![Smiley](./smileys_1/smileys_0000.jpg)
 
 About 10 images for negatives.
