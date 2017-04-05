@@ -31,6 +31,6 @@ We were able to get a decent prediction after this very small training set.
 
 To make the model accessible we created a bot. This simply adds a reaction to uploaded images. 
 
-![Slack bot](./img/slack.jpg)
+![Slack bot](./img/slack.png)
 
 
